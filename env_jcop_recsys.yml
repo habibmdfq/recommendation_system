@@ -1,0 +1,32 @@
+name: jcop_recsys
+
+channels:
+  - conda-forge
+  - anaconda
+
+dependencies:
+  # Essential
+  - python=3.9
+  - ipython
+  - pip
+  - tqdm
+  - nb_conda_kernels # optional, bisa dihapus jika tidak perlu integrasi Jupyter
+
+  # Data Science
+  - numpy>=1.21
+  - scipy>=1.7
+  - pandas>=1.3
+
+  # Machine Learning
+  - scikit-learn>=1.0
+
+  # Visualization
+  - ipywidgets>=7.6 # lebih baru tapi tetap kompatibel
+
+  # NLP
+  - nltk>=3.6
+
+  - pip:
+      # scikit-surprise tidak tersedia di conda, install via pip
+      - scikit-surprise==1.1.3
+      - luwiji==1.1.4
